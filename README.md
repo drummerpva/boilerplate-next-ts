@@ -1,34 +1,38 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# BoilerPlate Next TS
 
-## Getting Started
+- Iniciar o next
 
-First, run the development server:
+  - <code>yarn create next-app</code>
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+- Message Linter /_Garante que os commits serão dentro do padrão [conventional](https://www.conventionalcommits.org/en/v1.0.0/#specification) _/
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+  - <code>npm i -D git-commit-msg-linter</code>
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+- Linter /_Usar o .eslintrc.json, .eslintignore e .prettierrc como base_/
+  - <code>npm i -D eslint eslint-config-standard-with-typescript eslint-plugin-import eslint-plugin-promise eslint-plugin-node @typescript-eslint/eslint-plugin eslint-plugin-react</code>
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+### Git Hooks
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+- Garantir que o código esteja formatado corretamente antes do commit/_Usar .lintstagedrc.json e .huskyrc.json como base_/
+  - <code>npm i -D lint-staged husky</code>
 
-## Learn More
+### Jest
 
-To learn more about Next.js, take a look at the following resources:
+- Biblioteca de testes /_usar o jest.config.js como base e scripts estão package.json_/
+  - <code>npm i -D jest @types/jest ts-jest faker identity-obj-proxy</code>
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### React
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+- Bibliotecas principais
+  - <code>npm i react react-dom</code>
+  - <code>npm i -D @types/react @types/react-dom</code>
 
-## Deploy on Vercel
+### Bundle
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- Gerar arquivo JS /_usar webpack.config.js como base_/
+  - <code>npm i -D webpack webpack-cli webpack-dev-server clean-webpack-plugin</code>
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+### SASS
+
+- Processador de CSS
+  - <code>npm i -D node-sass sass-loader css-loader style-loader ts-loader</code>
