@@ -23,6 +23,17 @@
     - Não instalar com npm, e rodar com yarn
   - <code>yarn add -D eslint-plugin-react@latest @typescript-eslint/eslint-plugin@latest @typescript-eslint/parser@latest eslint@latest</code>
   - <code>yarn add -D eslint-plugin-react-hooks</code>
+  - <code>yarn add -D --exact prettier</code>
+  - <code>yarn add -D eslint-plugin-prettier</code>
+  - <code>yarn add -D eslint-config-prettier</code>
+  - Adicionar arquivo ./vscode/settings.json
+    - <code>{
+            "editor.formatOnSave": false,
+            "editor.codeActionsOnSave": {
+              "source.fixAll.eslint": true
+            }
+          }
+      </code>
 
 ### Git Hooks
 
