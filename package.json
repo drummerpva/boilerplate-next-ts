@@ -6,6 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
+    "lint": "eslint src --fix --max-warnings=0",
     "pre-commit": "lint-staged",
     "test": "jest",
     "test:watch": "npm test -- --watch",
