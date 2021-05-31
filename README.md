@@ -50,6 +50,6 @@
   - <code>yarn add -D @testing-library/react @testing-library/jest-dom</code>
 
 ### Styled Components
-- Biblioteca de estilos (necessita alterações no arquivo .babelrc e _document.tsx)
+- Biblioteca de estilos (necessita alterações no arquivo .babelrc e [_document.tsx](https://github.com/React-Avancado/boilerplate/blob/master/src/pages/_document.tsx))
   - <code>yarn add -D @types/styled-components babel-plugin-styled-components</code>
   - <code>yarn add styled-components</code>
