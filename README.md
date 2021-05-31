@@ -13,13 +13,24 @@
   - <code>yarn add -D typescript @types/react</code>
   - <code>yarn dev</code>
 
-- Linter /_Usar o .eslintrc.json, .eslintignore e .prettierrc como base_/
-  - <code>npm i -D eslint eslint-config-standard-with-typescript eslint-plugin-import eslint-plugin-promise eslint-plugin-node @typescript-eslint/eslint-plugin eslint-plugin-react</code>
+- Linter /_Usar o .eslintrc.json, .eslintignore, .prettierrc e .editorconfig como base_/
+  - <code>npx eslint --init</code>
+    - Check sintax and find problems
+    - import/export
+    - React
+    - Use Typescript (Yes)
+    - Browser
+    - Não instalar com npm, e rodar com yarn
+  - <code>yarn add -D eslint-plugin-react@latest @typescript-eslint/eslint-plugin@latest @typescript-eslint/parser@latest eslint@latest</code>
+  - <code>yarn add -D eslint-plugin-react-hooks</code>
 
 ### Git Hooks
 
 - Garantir que o código esteja formatado corretamente antes do commit/_Usar .lintstagedrc.json e .huskyrc.json como base_/
-  - <code>npm i -D lint-staged husky</code>
+  - <code>yarn add -D lint-staged husky</code>
+  - <code>yarn husky install</code>
+  - <code>yarn husky add .husky/pre-commit "yarn pre-commit"</code>
+  - <code>"pre-commit": "lint-staged"</code>
 
 ### Jest
 
