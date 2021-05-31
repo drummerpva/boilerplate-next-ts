@@ -12,7 +12,7 @@
     "test:staged": "npm test -- --findRelatedTests --bail",
     "test:ci": "npm test -- --coverage",
     "storybook": "start-storybook -s ./public -p 6006",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook -s ./public"
   },
   "dependencies": {
     "next": "10.2.3",
