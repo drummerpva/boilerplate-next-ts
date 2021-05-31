@@ -49,3 +49,7 @@
   - <code>yarn add -D jest @types/jest @babel/preset-typescript </code>
   - <code>yarn add -D @testing-library/react @testing-library/jest-dom</code>
 
+### Styled Components
+- Biblioteca de estilos (necessita alterações no arquivo .babelrc e _document.tsx)
+  - <code>yarn add -D @types/styled-components babel-plugin-styled-components</code>
+  - <code>yarn add styled-components</code>
