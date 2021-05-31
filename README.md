@@ -58,3 +58,6 @@
 ### StoryBook
 - Biblioteca de testes (arquivos de configuração dentro da pasta storybook)
   - <code>npx sb init</code>
+
+### Usar
+- <code>yarn create next-app -e https://github.com/drummerpva/boilerplate-next-ts</code>
