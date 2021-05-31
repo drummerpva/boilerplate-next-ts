@@ -54,3 +54,7 @@
   - <code>yarn add -D @types/styled-components babel-plugin-styled-components</code>
   - <code>yarn add styled-components</code>
   - <code>yarn add -D jest-styled-components</code>
+
+### StoryBook
+- Biblioteca de testes (arquivos de configuração dentro da pasta storybook)
+  - <code>npx sb init</code>
