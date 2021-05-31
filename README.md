@@ -40,26 +40,12 @@
 - Garantir que o código esteja formatado corretamente antes do commit/_Usar .lintstagedrc.json e .huskyrc.json como base_/
   - <code>yarn add -D lint-staged husky</code>
   - <code>yarn husky install</code>
-  - <code>yarn husky add .husky/pre-commit "yarn pre-commit"</code>
+  - <code>yarn husky add .husky/pre-commit "yarn pre-commit"</code> ou <code>npx husky init</code> e alterar o .husky/pre-commit
   - <code>"pre-commit": "lint-staged"</code>
 
 ### Jest
 
-- Biblioteca de testes /_usar o jest.config.js como base e scripts estão package.json_/
-  - <code>npm i -D jest @types/jest ts-jest faker identity-obj-proxy</code>
+- Biblioteca de testes /_usar o jest.config.js, .babelrc e .jest/setup.ts como base e scripts estão package.json_/
+  - <code>yarn add -D jest @types/jest @babel/preset-typescript </code>
+  - <code>yarn add -D @testing-library/react @testing-library/jest-dom</code>
 
-### React
-
-- Bibliotecas principais
-  - <code>npm i react react-dom</code>
-  - <code>npm i -D @types/react @types/react-dom</code>
-
-### Bundle
-
-- Gerar arquivo JS /_usar webpack.config.js como base_/
-  - <code>npm i -D webpack webpack-cli webpack-dev-server clean-webpack-plugin</code>
-
-### SASS
-
-- Processador de CSS
-  - <code>npm i -D node-sass sass-loader css-loader style-loader ts-loader</code>
